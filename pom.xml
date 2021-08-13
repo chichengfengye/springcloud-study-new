@@ -9,6 +9,7 @@
         <module>provider</module>
         <module>eureka01</module>
         <module>eureka02</module>
+        <module>provider02</module>
     </modules>
 
     <groupId>org.example</groupId>
