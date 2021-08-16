@@ -7,7 +7,7 @@ spring:
 eureka:
   server:
     enable-self-preservation: false
-    eviction-interval-timer-in-ms: 5000
+    eviction-interval-timer-in-ms: 5000 # 每5s检查一次，但是检查出来过期的也不会立马过期，他还会等待一段时间
   instance:
     hostname: localhost
   client:
