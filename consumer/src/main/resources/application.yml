@@ -2,4 +2,16 @@ server:
   port: 80
 spring:
   application:
-    name: consumer
+    name: consumer-service
+logging:
+  level:
+    com.jf.springcloud.consumer: info
+services:
+  service_name: provider-service
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
