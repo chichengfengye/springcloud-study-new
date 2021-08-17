@@ -8,7 +8,8 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 1    #周期通知存活时间
     lease-expiration-duration-in-seconds: 2 #告诉后端自己过多久不回复就可以被当作过期删除
-    #    hostname: localhost
+    instance-id: provider-8002
+    prefer-ip-address: true
   client:
     register-with-eureka: true
     fetch-registry: true
