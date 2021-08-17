@@ -1,5 +1,5 @@
 server:
-  port: 8761
+  port: 8762
 spring:
   application:
     name: eureka
@@ -9,9 +9,9 @@ eureka:
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 5000 # 每5s检查一次，但是检查出来过期的也不会立马过期，他还会等待一段时间
   instance:
-    hostname: www.eureka01.com
+    hostname: www.eureka02.com
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:8762/eureka/
+      defaultZone: http://localhost:8761/eureka/
