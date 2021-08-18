@@ -15,3 +15,6 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://www.eureka01.com:8761/eureka/,http://www.eureka02.com:8762/eureka/
+
+info:
+  name: provider-01

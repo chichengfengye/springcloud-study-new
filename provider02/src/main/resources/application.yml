@@ -16,3 +16,7 @@ eureka:
     service-url:
       zone1: http://www.eureka01.com:8761/eureka/
       zone2: http://www.eureka02.com:8762/eureka/
+
+
+info:
+  name: provider-02
