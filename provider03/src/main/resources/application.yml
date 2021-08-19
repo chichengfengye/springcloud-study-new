@@ -1,0 +1,18 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: provider03
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 1    #周期通知存活时间
+    lease-expiration-duration-in-seconds: 2 #告诉后端自己过多久不回复就可以被当作过期删除
+    instance-id: provider-8003
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+#    service-url:     #不写的话默认找localhost:8761
+#      defaultZone: http://www.eureka01.com:9761/eureka/,http://www.eureka02.com:9762/eureka/
