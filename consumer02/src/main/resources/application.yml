@@ -1,0 +1,17 @@
+server:
+  port: 81
+spring:
+  application:
+    name: consumer02
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: consumer02
+    lease-expiration-duration-in-seconds: 10
+    lease-renewal-interval-in-seconds: 5
+  client:
+    service-url:
+      zone: http://www.eureka01.com:8761/eureka/,http://www.eureka02.com:8762/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+
